@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="favicon_io/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>my calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="display">
+        <input id="screen" type="text" placeholder="0" />
+      </div>
+
+      <div class="btns">
+        <div class="row">
+          <button onclick="e()">e</button>
+          <button onclick="pi()">π</button>
+          <button onclick="pow()">x<sup>2</sup></button>
+          <button id="ac" onclick="screen.value = ' '">AC</button>
+        </div>
+
+        <div class="row">
+          <button class="btn">(</button>
+          <button class="btn">)</button>
+          <button onclick="sqrt()">
+            <i class="fa-solid fa-square-root-variable"></i>
+          </button>
+          <button class="btn">/</button>
+        </div>
+
+        <div class="row">
+          <button class="btn">7</button>
+          <button class="btn">8</button>
+          <button class="btn">9</button>
+          <button class="btn">*</button>
+        </div>
+
+        <div class="row">
+          <button class="btn">4</button>
+          <button class="btn">5</button>
+          <button class="btn">6</button>
+          <button class="btn">-</button>
+        </div>
+
+        <div class="row">
+          <button class="btn">1</button>
+          <button class="btn">2</button>
+          <button class="btn">3</button>
+          <button class="btn">+</button>
+        </div>
+
+        <div class="row">
+          <button class="btn">0</button>
+          <button class="btn">.</button>
+          <button id="eval" onclick="screen.value = eval(screen.value)">
+            =
+          </button>
+          <button class="btn">%</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

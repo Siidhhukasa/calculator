@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(120deg, rgb(102, 102, 237), rgb(227, 109, 227));
+
+}
+
+.container {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(173, 194, 240);
+    box-shadow: 12px 12px 12px rgba(134, 130, 130, 0.32),
+        -12px -12px 20px rgba(97, 89, 89, 0.235);
+
+}
+
+.display #screen {
+    width: 97%;
+    height: 90%;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    text-align: right;
+    padding-right: 0.5em;
+    background: rgb(247, 246, 243);
+    border-radius: 6px;
+    box-shadow: inset 5px 5px 5px rgb(214, 204, 204),
+        inset -5px -5px 5px rgb(244, 242, 242);
+}
+
+.btns {
+    width: 100%;
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btns .row button {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    margin: 5px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 6px #1f1c1c20;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.btns .row button:hover {
+    box-shadow: inset 5px 5px 8px rgba(16, 16, 16, .1),
+        inset -5px -5px 8px rgb(16, 16, 16, .1);
+    background: #fff;
+}
+
+#eval {
+    background: greenyellow;
+    color: rgb(71, 64, 196);
+    box-shadow: inset 5px 5px 8px #66d9ff inset -5px -5px 8px #00ace6;
+}
+
+#ac {
+    background: rgb(77, 170, 224);
+    color: rgb(145, 70, 70);
+    box-shadow: inset 5px 5px 8px #66d9ff inset -5px -5px 8px #00ace6;
+}
